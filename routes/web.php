@@ -13,14 +13,10 @@
 
 Route::get('/', function () {
 
-	$first_name = "Eliam";
-	$last_name = "LOTONGA ";
-	
-	$data = [	'first_name' => $first_name,
-    			'last_name' => $last_name
-    		];
-    
-    return view('pages.accueil', $data);
+	$view =  view('pages.accueil');
+	$view->first_name = "Eliam";
+	$view->last_name = "LOTONGA ";
+	return $view;
 });
 
 Route::get('/about', function()
