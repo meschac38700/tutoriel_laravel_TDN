@@ -42,3 +42,16 @@ Route::get('/events', function()
 	return view('pages.events', compact('events') );
 
 });
+
+Route::get('/database/posts', function()
+{
+	$posts = DB::table('posts')->get();
+	dd($posts);
+});
+
+Route::get('/database/insert', function()
+{
+
+	$success = DB::table('posts')->insert(['title'=>"Un autre titre", "body"=>"Un autre commentaire"]);
+	var_dump($success);
+});
