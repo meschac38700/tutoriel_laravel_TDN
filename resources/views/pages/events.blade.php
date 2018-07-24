@@ -7,11 +7,13 @@
 	<h1>Events</h1>
 	<table>
 		
-		@foreach($events as $event)
+		@forelse($events as $event) {{-- forelse permet de traiter l'expcetion si le tableau donné est vide ! --}}
 		<tr>
 			<td> {{ $event }} </td>
  		</tr>
-		@endforeach
+ 		@empty
+ 			{{ " Pas d'evenement ! " }}
+		@endforelse
 
 
 	</table>
