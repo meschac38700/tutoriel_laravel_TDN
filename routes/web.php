@@ -16,7 +16,12 @@ Route::get('/', function () {
 	$first_name = "Eliam";
 	$last_name = "LOTONGA ";
 
-    return view('pages.accueil')->with('first_name', $first_name)->with('last_name', $last_name);
+    return view('pages.accueil')->with(
+    								[
+    									'first_name' => $first_name,
+    									'last_name' => $last_name
+    								]
+    							);
 });
 
 Route::get('/about', function()
