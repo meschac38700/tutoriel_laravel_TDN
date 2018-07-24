@@ -31,8 +31,10 @@ Route::get('/help', function()
 Route::get('/events', function()
 {
 	$events = [
-		"PHP" => "Make PHP great again",
-		"Laravel" => "Laravel conference"
+		"Make PHP great again",
+		"Laravel conference",
+		"Meetup TDN",
+		"JAVA conference"
 	];
 	return view('pages.events', compact('events') );
 

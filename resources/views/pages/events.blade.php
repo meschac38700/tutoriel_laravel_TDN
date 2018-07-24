@@ -6,11 +6,14 @@
 <body>
 	<h1>Events</h1>
 	<table>
-		<?php foreach ($events as $key => $value):?>
+		
+		@foreach($events as $event)
 		<tr>
-			<td> <?= $key ?> </td> <td><?= $value ?> </td>
+			<td> {{ $event }} </td>
  		</tr>
-		<?php endforeach?>
+		@endforeach
+
+
 	</table>
 
 </body>
