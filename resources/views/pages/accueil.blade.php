@@ -7,10 +7,14 @@
 	<h1>Accueil</h1>
 
 	<p>{{ $last_name . $first_name }} </p>
-	@unless( $isWeekend ) // unless = à moins que...
-		{{ " va travailler ! " }}
+	@if( 1==2 ) {{-- unless = à moins que...--}} 
+		{{ " 1 = 2 " }}
+	@elseif( 2 == 3 )
+		{{ " 2 = 3 " }}
+	@elseif( 5 == 5 )
+		{{" 5 = 5"}}
 	@else
-		{{ " va t'amuser ! " }}
+		{{ "sinon "}}
 	@endif
 </body>
 </html>
