@@ -12,7 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('pages.accueil');
+
+	$nom = "LOTONGA Eliam";
+
+    return view('pages.accueil')->with('nom', $nom);
 });
 
 Route::get('/about', function()
