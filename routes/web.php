@@ -27,3 +27,13 @@ Route::get('/help', function()
 {
 	return View::make('pages.help');
 });
+
+Route::get('/events', function()
+{
+	$events = [
+		"PHP" => "Make PHP great again",
+		"Laravel" => "Laravel conference"
+	];
+	return view('pages.events', compact('events') );
+
+});
