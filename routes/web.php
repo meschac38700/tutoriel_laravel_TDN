@@ -11,11 +11,14 @@
 |
 */
 
+use App\Utilities\Date;
+
 Route::get('/', function () {
 
 	$first_name = "Eliam";
 	$last_name = "LOTONGA ";
-	$isWeekend = date('N')>5;
+
+	$isWeekend = Date::isWeekend();
 	return view('pages.accueil', compact('first_name', 'last_name', 'isWeekend'));
 });
 
