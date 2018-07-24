@@ -4,11 +4,7 @@
 
 	@section('content')
 		<p>{{ $last_name . $first_name }} </p>
-		@unless( $isWeekend )  {{-- unless = à moins que... --}}
-			{{ " va travailler ! " }}
-		@else
-			{{ " va t'amuser ! " }}
-		@endif
+		@include('shared._Weekend')
 	@stop
 
 	@section('footer')
