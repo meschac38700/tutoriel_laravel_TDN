@@ -6,6 +6,6 @@
 <body>
 	<h1>Accueil</h1>
 
-	<p><?= $last_name . $first_name ?></p>
+	<p><?= $lastName . $firstName ?></p>
 </body>
 </html>
