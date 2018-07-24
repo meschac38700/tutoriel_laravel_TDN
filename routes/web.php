@@ -19,3 +19,7 @@ Route::get('/about', function()
 {
 	return view('pages.about');
 });
+Route::get('/help', function()
+{
+	return View::make('pages.help');
+});
