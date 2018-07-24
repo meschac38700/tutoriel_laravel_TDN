@@ -12,7 +12,9 @@
  		@empty
  			{{ " Pas d'evenements ! " }}
 		@endforelse
-
-
 	</table>
 @stop
+
+@push('scripts.footer')
+	<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+@endpush
