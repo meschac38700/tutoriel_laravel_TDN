@@ -15,8 +15,8 @@ Route::get('/', function () {
 
 	$first_name = "Eliam";
 	$last_name = "LOTONGA ";
-
-	return view('pages.accueil')->withFirstName($first_name)->withLastName($last_name);
+	$isWeekend = date('N')>5;
+	return view('pages.accueil', compact('first_name', 'last_name', 'isWeekend'));
 });
 
 Route::get('/about', function()
