@@ -5,9 +5,9 @@
 </head>
 <body>
 	
-	@include('layouts/partials/_nav')
+	@include('layouts/partials/_nav', ['page' => $page ] )
 	
-	<h1>{{$page}}</h1>
+	
 	
 	@yield('content')
 

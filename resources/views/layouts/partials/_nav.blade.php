@@ -1,3 +1,4 @@
+<h1>{{$page}}</h1>
 <nav>
 	<ul>
 		<li><a href="#">Home</a></li>
