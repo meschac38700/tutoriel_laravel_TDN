@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>About</title>
-</head>
-<body>
-	<h1>About</h1>
-</body>
-</html>
+@extends('../layouts.master', ['page'=>'About'])
+
+@section('title', 'About')

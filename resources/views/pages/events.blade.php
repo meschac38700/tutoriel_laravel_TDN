@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Events</title>
-</head>
-<body>
-	<h1>Events</h1>
+@extends('../layouts.master', ['page'=>'Events'])
+
+@section('title', 'Events')
+
+@section('content')
 	<table>
 		
 		@forelse($events as $event) {{-- forelse permet de traiter l'expcetion si le tableau donné est vide ! --}}
@@ -12,11 +10,9 @@
 			<td> {{ $event }} </td>
  		</tr>
  		@empty
- 			{{ " Pas d'evenement ! " }}
+ 			{{ " Pas d'evenements ! " }}
 		@endforelse
 
 
 	</table>
-
-</body>
-</html>
+@stop
