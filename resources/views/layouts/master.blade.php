@@ -5,7 +5,7 @@
 </head>
 <body>
 	
-	@include('layouts/partials/_nav', ['page' => $page ] )
+	@include('layouts/partials/_nav' ) {{-- ce partial a egalement access aux variables presentes dans ce layout --}}
 	
 	
 	
