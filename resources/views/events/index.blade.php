@@ -9,8 +9,8 @@
 				<p><strong>{{$event->name}}</strong></p>
 				<p>{{$event->description}}</p>
 				<p>Lieu: {{$event->location}}</p>
-				<p>Prix: {{$event->price}} Euros</p>
-				<p>Date: {{ $event->starts_at->format("d/m/Y, H:i")}} </p>
+				<p>Prix: {{ App\Helpers\EventsHelper::formatPrice($event) }}</p>
+				<p>Date: {{ App\Helpers\EventsHelper::formatDate($event->starts_at)}} </p>
 			</article>
 			@if( !$loop->last )
 				<hr>
