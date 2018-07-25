@@ -14,12 +14,19 @@ use App\Event;
 Route::get('/', function () {
 	//DB::statement('TRUNCATE TABLE events');
 	/*Event::create([
-			'name'=> "Super sketch de Wil Aime !",
-			'description'=> "Super sketech de Mister Wil Aime à ne pas rater !",
-			'location'=> "Marseille, FR",
-			'price'=> 40
+			'name'=> "toto !",
+			'description'=> "Super sketech de Toto à ne pas rater !",
+			'location'=> "Bron, FR",
+			'price'=> 0,
+			'starts_at'=>new DateTime('+5 days')
 		]);
-*/
+Event::create([
+			'name'=> "Titi !",
+			'description'=> "Super sketech de Titi à ne pas rater !",
+			'location'=> "Lyon, FR",
+			'price'=> 0,
+			'starts_at'=>new DateTime('+5 hours')
+		]);*/
 	$events = Event::all();
     return view('events.index', compact('events') );
 });
