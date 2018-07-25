@@ -27,6 +27,7 @@ Event::create([
 			'price'=> 0,
 			'starts_at'=>new DateTime('+5 hours')
 		]);*/
+		//Event::destroy([id1, id2, id3 ...])
 	$events = Event::all();
     return view('events.index', compact('events') );
 });
